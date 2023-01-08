@@ -1,0 +1,328 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.raj{
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1000px;
+  width: 100%;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  /* background: #fff; */
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 300px 700px;
+  box-shadow: 0 50px 75px rgba(0,0,0,0.1);
+}
+
+.container .leftside{
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.profileText{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.profileText .imgBx{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+
+.profileText .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115%;
+  object-fit: cover;
+}
+
+.profileText h2{
+  color: #fff;
+  font-size: 1.362em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.profileText h2 span{
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo{
+  padding-top: 40px;
+}
+
+.title{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  
+}
+
+.contactInfo ul{
+  position: relative;
+}
+
+.contactInfo ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+  display: inline-block;
+  width: 25px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+
+.contactInfo ul li span{
+  color: #fff;
+  font-weight: 300;
+}
+
+.contactInfo.education li{
+  margin-bottom: 15px;
+}
+
+.contactInfo.education h6{
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contactInfo.education h5:nth-child(2){
+  color: #fff;
+  font-weight: 500;
+}
+
+.contactInfo.education h5{
+  color: #fff;
+  font-weight: 300;
+}
+
+.contactInfo .language h3.title{
+  margin-left: 50px;
+  color: red;
+}
+
+.contactInfo.language .percent{
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+  padding-right: 220px;
+}
+
+.ram_eng{
+  width: 70%;
+}
+
+.ram_ben{
+  width: 90%;
+}
+
+.ram_hin{
+  width: 80%;
+}
+
+.ram_odi{
+  width: 55%;
+}
+
+.contactInfo.language .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+
+
+
+
+.container .rightside{
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+
+.about{
+  margin-bottom: 30px;
+  
+}
+
+.about:last-child{
+  margin-bottom: 0;
+}
+
+.title2{
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+p{
+  color: #333;
+}
+
+.about .box{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.about .box .date_company{
+  min-width: 150px;
+}
+
+.about .box .date_company h6{
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+  
+}
+
+.about .box .date_company h6:last-child{
+  margin-top: 15px;
+}
+
+.about .box .text{
+  margin-top: 10px;
+}
+
+.about .box .text h5{
+  text-transform: uppercase;
+  /* color: #2a7da2; */
+  font-size: 16px;
+}
+
+.about .box .text p{
+  margin-top: 13px;
+}
+
+.about ul{
+  position: relative;
+}
+
+.about ul li{
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+}
+
+.about ul li h5{
+  font-size: 18px;
+}
+
+.about ul li h6{
+  font-size: 15px;
+  color: #848c90;
+}
+
+.skills .box{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h5{
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 5;
+}
+
+.skills .box .percentage{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+.skills .box .percentage div{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.sam_a{
+  width: 95%;
+}
+
+.sam_b{
+  width: 80%;
+}
+
+.sam_c{
+  width: 50%;
+}
+
+.sam_d{
+  width: 70%;
+}
+
+.sam_e{
+  width: 70%;
+}
+
+.sam_f{
+  width: 50%;
+}
+
+
+.interest ul{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+}
+
+.interest ul li{
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li i{
+  color: #03a9f4;
+  font-size: 18px;
+  margin-right: 5px;
+}
